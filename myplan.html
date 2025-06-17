@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8"> 
+  <title>Howsha Maalinlaha</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 10px;
+      background-color: #121212;
+      color: #f5f5f5;
+    }
+
+    .container {
+      padding: 3px;
+      border: 1px solid #444;
+      border-radius: 10px;
+      margin-bottom: 0px;
+      background: #1e1e1e;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    h2 a {
+      color: #90ee90;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    h2 a:hover {
+      text-decoration: underline;
+    }
+
+    label {
+      display: block;
+      margin: 2px 0;
+      background: #2a2a2a;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 0px;
+      transition: background 0.2s;
+    }
+
+    label:hover {
+      background: #333;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+      accent-color: #90ee90;
+    }
+
+    .done {
+      text-decoration: line-through;
+      color: gray;
+    }
+
+    #clearData {
+      padding: 5px 5px;
+      font-size: 10px;
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #clearData:hover {
+      background-color: #c82333;
+    }
+   hr {
+  border: 1px solid white;               /* Remove the default border */
+  height: 3px;                /* Set a visible height */
+  background-color: white;    /* Set your desired background color */
+  margin-top: -0.05% !important;
+  margin-bottom: -0.3% !important;
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row g-4">
+
+    <!-- Container Template -->
+    <div class="col-md-4">
+      <div class="container" data-list="1">
+        <h2><a href="#" class="reset-link">✅ EURUSD</a></h2>
+        <div class="steps">
+          <label><input type="checkbox"> #Sohel 4HR Trend</label>
+          <label><input type="checkbox"> #Sohel 4HR Bos u danbeeyay</label>  
+          <label><input type="checkbox"> #Calamade 4HR last swing H iyo L</label>
+          <label><input type="checkbox"> #Calamade Zone ka 4 HR ka losocdo</label>
+          <hr>
+          <label><input type="checkbox"> #aad 15m so hel 15m Trend</label>
+          <label><input type="checkbox"> #so hel 15m Bos Candle close leh</label> 
+          <label><input type="checkbox"> #sohel 15m liquidity (Equal h/l,Inducment)</label>
+          <label><input type="checkbox"> #hala imado 15m zone ka</label>
+          <hr>
+          <label><input type="checkbox"> #Aad 1m sohel 1m structure break</label>
+          <label><input type="checkbox"> #1m zone halagugu laabto</label>
+          <label><input type="checkbox"> #Target 1:3</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more containers below (AUDUSD, NZDUSD, EURAUD, USDCAD, USDJPY) -->
+
+    <!-- Sample additional one -->
+   <div class="col-md-4">
+      <div class="container" data-list="2">
+        <h2><a href="#" class="reset-link">✅ GBPUSD</a></h2>
+        <div class="steps">
+          <label><input type="checkbox"> #Sohel 4HR Trend</label>
+          <label><input type="checkbox"> #Sohel 4HR Bos u danbeeyay</label>  
+          <label><input type="checkbox"> #Calamade 4HR last swing H iyo L</label>
+          <label><input type="checkbox"> #Calamade Zone ka 4 HR ka losocdo</label>
+          <hr>
+          <label><input type="checkbox"> #aad 15m so hel 15m Trend</label>
+          <label><input type="checkbox"> #so hel 15m Bos Candle close leh</label> 
+          <label><input type="checkbox"> #sohel 15m liquidity (Equal h/l,Inducment)</label>
+          <label><input type="checkbox"> #hala imado 15m zone ka</label>
+          <hr>
+          <label><input type="checkbox"> #Aad 1m sohel 1m structure break</label>
+          <label><input type="checkbox"> #1m zone halagugu laabto</label>
+          <label><input type="checkbox"> #Target 1:3</label>
+        </div>
+      </div>
+    </div>
+     
+    <!-- Sample additional one -->
+    <div class="col-md-4">
+      <div class="container" data-list="1">
+        <h2><a href="#" class="reset-link">✅ USDJPY</a></h2>
+        <div class="steps">
+          <label><input type="checkbox"> #Sohel 4HR Trend</label>
+          <label><input type="checkbox"> #Sohel 4HR Bos u danbeeyay</label>  
+          <label><input type="checkbox"> #Calamade 4HR last swing H iyo L</label>
+          <label><input type="checkbox"> #Calamade Zone ka 4 HR ka losocdo</label>
+          <hr>
+          <label><input type="checkbox"> #aad 15m so hel 15m Trend</label>
+          <label><input type="checkbox"> #so hel 15m Bos Candle close leh</label> 
+          <label><input type="checkbox"> #sohel 15m liquidity (Equal h/l,Inducment)</label>
+          <label><input type="checkbox"> #hala imado 15m zone ka</label>
+          <hr>
+          <label><input type="checkbox"> #Aad 1m sohel 1m structure break</label>
+          <label><input type="checkbox"> #1m zone halagugu laabto</label>
+          <label><input type="checkbox"> #Target 1:3</label>
+        </div>
+      </div>
+    </div>
+     
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+      <div class="container" data-list="1">
+        <h2><a href="#" class="reset-link">✅ USDCAD</a></h2>
+        <div class="steps">
+          <label><input type="checkbox"> #Sohel 4HR Trend</label>
+          <label><input type="checkbox"> #Sohel 4HR Bos u danbeeyay</label>  
+          <label><input type="checkbox"> #Calamade 4HR last swing H iyo L</label>
+          <label><input type="checkbox"> #Calamade Zone ka 4 HR ka losocdo</label>
+          <hr>
+          <label><input type="checkbox"> #aad 15m so hel 15m Trend</label>
+          <label><input type="checkbox"> #so hel 15m Bos Candle close leh</label> 
+          <label><input type="checkbox"> #sohel 15m liquidity (Equal h/l,Inducment)</label>
+          <label><input type="checkbox"> #hala imado 15m zone ka</label>
+          <hr>
+          <label><input type="checkbox"> #Aad 1m sohel 1m structure break</label>
+          <label><input type="checkbox"> #1m zone halagugu laabto</label>
+          <label><input type="checkbox"> #Target 1:3</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="container" data-list="1">
+        <h2><a href="#" class="reset-link">✅ AUDUSD</a></h2>
+        <div class="steps">
+          <label><input type="checkbox"> #Sohel 4HR Trend</label>
+          <label><input type="checkbox"> #Sohel 4HR Bos u danbeeyay</label>  
+          <label><input type="checkbox"> #Calamade 4HR last swing H iyo L</label>
+          <label><input type="checkbox"> #Calamade Zone ka 4 HR ka losocdo</label>
+          <hr>
+          <label><input type="checkbox"> #aad 15m so hel 15m Trend</label>
+          <label><input type="checkbox"> #so hel 15m Bos Candle close leh</label> 
+          <label><input type="checkbox"> #sohel 15m liquidity (Equal h/l,Inducment)</label>
+          <label><input type="checkbox"> #hala imado 15m zone ka</label>
+          <hr>
+          <label><input type="checkbox"> #Aad 1m sohel 1m structure break</label>
+          <label><input type="checkbox"> #1m zone halagugu laabto</label>
+          <label><input type="checkbox"> #Target 1:3</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+     
+
+  </div>
+</div>
+<script>
+  document.querySelectorAll('.container').forEach((container, containerIndex) => {
+    const checkboxes = container.querySelectorAll('input[type="checkbox"]');
+    const title = container.querySelector('h2');
+
+    // Make <h2> look like a clickable link
+    title.style.cursor = 'pointer';
+    title.style.textDecoration = 'underline';
+
+    // Restore checkbox state from localStorage
+    checkboxes.forEach((checkbox, index) => {
+      const saved = localStorage.getItem(`checkbox_${containerIndex}_${index}`);
+      if (saved === "true") {
+        checkbox.checked = true;
+        checkbox.parentElement.classList.add("done");
+      }
+    });
+
+    // Save state on checkbox change
+    checkboxes.forEach((checkbox, index) => {
+      checkbox.addEventListener("change", () => {
+        localStorage.setItem(`checkbox_${containerIndex}_${index}`, checkbox.checked);
+        checkbox.parentElement.classList.toggle("done", checkbox.checked);
+      });
+    });
+
+    // Clear only this section when clicking its <h2>
+    title.addEventListener('click', () => {
+      Swal.fire({
+        title: 'Ma hubtaa?',
+        text: "Waxaa tirtiri doontaa xogta qaybtaan kaliya.",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Haa, tirtir!',
+        cancelButtonText: 'Maya',
+        background: '#1e1e1e',
+        color: '#f5f5f5'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          checkboxes.forEach((checkbox, index) => {
+            localStorage.removeItem(`checkbox_${containerIndex}_${index}`);
+            checkbox.checked = false;
+            checkbox.parentElement.classList.remove("done");
+          });
+
+          Swal.fire({
+            icon: 'success',
+            title: 'La tirtiyay!',
+            text: 'Qaybtaan waa la nadiifiyay.',
+            timer: 1500,
+            showConfirmButton: false
+          });
+        }
+      });
+    });
+  });
+</script>
+
+
+</body>
+</html>
